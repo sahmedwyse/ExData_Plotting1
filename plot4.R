@@ -35,7 +35,7 @@ plot4 <- function()
     p3 <- xyplot(Sub_metering_1 + Sub_metering_2 + Sub_metering_3~Time, 
            dataset, xlab=" ", ylab="Energy sub metering", type="l", 
            col=c("black", "red", "blue"),
-           auto.key=list(corner=c(1,1), lines=T, points=F, border=T, text=c("S. M. 1", "S. M. 2", "S. M. 3")), scales=scalelist)
+           auto.key=list(corner=c(1,1), lines=T, points=F, border=F, text=c("S. M. 1", "S. M. 2", "S. M. 3")), scales=scalelist)
     
     p4 <- xyplot(Global_reactive_power~Time, dataset, xlab="datetime",  type="l", col="black", scales=scalelist)
     
